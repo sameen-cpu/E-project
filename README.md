@@ -8,7 +8,7 @@ A multi-page, fully responsive website celebrating the art of calligraphy.
 
 * **Homepage (index.html):** Introduction and navigation hub
 * **About (about.html):** Mission & history of calligraphy
-* **Categories (categories.html):** Explore styles – Arabic, Gothic, Modern
+* **Categories (categories.html):** Explore styles – Arabic, Western, Oriental
 
 **Products:**
 
