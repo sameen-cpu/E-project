@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in || Sign up from</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- Top Navbar (Logo & Search) -->
+    <nav class="top-navbar d-flex  align-items-center px-4 py-2">
+        <div class="btn"><a href="form.html" id="loginBtn">SIGN UP / LOGIN</a></div>
+        <div class="logo site-title ">
+            <a class="navbar-brand " href="#">QuickCalligraphy</a>
+        </div>
+    </nav>
+
+   
+    <!-- Main Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg navbar-light sticky-top">
+    <img src="images/logo.jpg" alt="Logo" height="50" class="d-lg-block ml-3">
+    
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                    <a class="dropdown-item" href="western.html">Western</a>
+                    <a class="dropdown-item" href="arabic.html">Arabic</a>
+                    <a class="dropdown-item" href="oriental.html">Oriental</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="searchForm">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchInput">
+            <button class="btn my-2 my-sm-0" type="submit" id="searchBtn">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="breadcrumbs">
+    <a href="index.html">Home</a> &gt; Sign-up / Login Form
+</div>
+    <br>
+    <br>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="https://formspree.io/f/mzzrqked" method="post" class="sign">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div class="infield">
+                    <input type="text" placeholder="Name" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="https://formspree.io/f/mzzrqked" method="post" class="sign">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+                <button class="sign-button">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left"> 
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="sign-in-btn">Sign In</button>
+                </div>
+                
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="sign-up-btn">Sign Up</button>
+                </div>
+                
+                
+                <!-- <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button>Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="sign-up-btn">Sign Up</button>
+                </div> -->
+            </div>
+            <button id="overlayBtn"></button>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="info.html">Calligraphy Info</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="western.html">Western</a></li>
+                    <li><a href="arabic.html">Arabic</a></li>
+                    <li><a href="oriental.html">Oriental</a></li>
+                    <li><a href="greek.html">Greek</a></li>
+                    <li><a href="indic.html">Indic</a></li>
+                </ul>
+            </div>
+            <div class="footer-icons">
+                <div>BE IN TOUCH</div>
+                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="bi bi-pinterest"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+923124186159" target="_blank"><i
+                        class="bi bi-whatsapp"></i></a>
+            </div>
+
+            <section class="newsletter">
+                <h2>Subscribe to our Newsletter</h2>
+                <form>
+                    <input type="email" placeholder="Enter your email..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </div>
+        <p>&copy; 2025 QuickCalligraphy. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+
+    <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- js code -->
+    <script>
+        const container = document.getElementById('container')
+        const overlayCon = document.getElementById('overlayCon')
+        const overlayBtn = document.getElementById('overlayBtn')
+
+        overlayBtn.addEventListener('click', () => {
+            container.classList.toggle('right-panel-active');
+
+            overlayBtn.classList.remove('btnScaled');
+            window.requestAnimationFrame(() => {
+                overlayBtn.classList.add('btnScaled');
+            })
+        })
+    </script>
+
+</body>
+
+</html>
